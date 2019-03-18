@@ -1,1 +1,1 @@
-# che-test-service
+# Sample Che plugin service
