@@ -24,7 +24,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
 
 # This alpine SHA maps to version 3.7, which is the latest we've tested with at the time of this change.
 FROM alpine@sha256:7df6db5aa61ae9480f52f0b3a06a140ab98d427f86d8d5de0bedab9b8df6b1c0
-RUN apk --no-cache add ca-certificates git
+RUN apk --no-cache add bash ca-certificates git
 
 WORKDIR /root
 
